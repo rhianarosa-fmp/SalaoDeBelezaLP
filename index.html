@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define a codificação para aceitar acentos -->
+    <meta charset="UTF-8">
+
+    <!-- Permite adaptar a página a celulares e computadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cabelo Mara! | Salão de Beleza</title>
+
+    <!-- Conecta o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Carrega fontes para o nome cursivo e os textos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap"
+          rel="stylesheet">
+
+    <!-- Carrega o JavaScript depois que o HTML for interpretado -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Cabeçalho com o nome do salão e a navegação -->
+    <header class="cabecalho">
+        <a href="#inicio" class="logo">Cabelo Mara!</a>
+
+        <nav aria-label="Navegação principal">
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Apresentação principal do salão -->
+        <section class="inicio" id="inicio">
+            <div class="conteudo-inicio">
+                <p class="subtitulo">SEU MOMENTO DE BELEZA</p>
+
+                <h1>Realce sua beleza,<br>
+                    <span>revele sua essência.</span>
+                </h1>
+
+                <p class="descricao">
+                    Um espaço pensado para cuidar de você,
+                    valorizar sua beleza e renovar sua autoestima.
+                </p>
+
+                <!-- Botão que executará uma função JavaScript -->
+                <button class="botao-principal" id="botaoAgendar">
+                    Agendar horário
+                </button>
+
+                <p id="mensagemAgendamento"
+                   class="mensagem"
+                   role="status"
+                   aria-live="polite"></p>
+            </div>
+
+            <!-- Imagem ilustrativa do ambiente de beleza -->
+            <div class="imagem-inicio">
+                <img
+                    src="img/1090363759817054902 (1).jpg"
+                    alt="Ambiente de um salão de beleza"
+                >
+                <div class="selo">
+                    <span>Seu brilho</span>
+                    <strong>começa aqui!</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção que apresenta os serviços oferecidos -->
+        <section class="servicos secao" id="servicos">
+            <div class="titulo-secao">
+                <p class="subtitulo">CUIDADOS ESPECIAIS</p>
+                <h2>Nossos serviços</h2>
+                <p>
+                    Escolha seu cuidado favorito e reserve
+                    um momento só para você.
+                </p>
+            </div>
+
+            <div class="lista-servicos">
+                <article class="cartao-servico">
+                    <div class="icone">✂</div>
+                    <h3>Corte de cabelo</h3>
+                    <p>
+                        Cortes que valorizam seu estilo
+                        e sua personalidade.
+                    </p>
+                </article>
+
+                <article class="cartao-servico">
+                    <div class="icone">♡</div>
+                    <h3>Hidratação</h3>
+                    <p>
+                        Cuidados para deixar os fios
+                        macios, brilhantes e saudáveis.
+                    </p>
+                </article>
+
+                <article class="cartao-servico">
+                    <div class="icone">✧</div>
+                    <h3>Escova e finalização</h3>
+                    <p>
+                        Um acabamento especial para
+                        você se sentir ainda mais bonita.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção institucional do salão -->
+        <section class="sobre secao" id="sobre">
+            <div class="sobre-imagem">
+                <img
+                    src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=85"
+                    alt="Interior acolhedor de um salão de beleza"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="sobre-conteudo">
+                <p class="subtitulo">PRAZER, SOMOS O</p>
+                <h2>Cabelo Mara!</h2>
+
+                <p>
+                    Acreditamos que cada pessoa tem uma beleza única.
+                    Por isso, queremos proporcionar uma experiência
+                    acolhedora, com atenção aos detalhes e carinho
+                    em cada atendimento.
+                </p>
+
+                <ul class="diferenciais">
+                    <li>♡ Atendimento acolhedor</li>
+                    <li>♡ Cuidado com cada detalhe</li>
+                    <li>♡ Um momento dedicado a você</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Chamada para ação e contato -->
+        <section class="contato secao" id="contato">
+            <p class="subtitulo">VOCÊ MERECE ESSE MOMENTO</p>
+            <h2>Vamos cuidar de você?</h2>
+
+            <p>
+                Entre em contato para consultar os serviços
+                e combinar seu horário.
+            </p>
+
+            <button class="botao-principal" id="botaoContato">
+                Quero conhecer os serviços
+            </button>
+
+            <p id="mensagemContato"
+               class="mensagem"
+               role="status"
+               aria-live="polite"></p>
+        </section>
+    </main>
+
+    <!-- Rodapé com o nome e o ano atualizado automaticamente -->
+    <footer class="rodape">
+        <a href="#inicio" class="logo">Cabelo Mara!</a>
+        <p>Beleza, cuidado e autoestima.</p>
+        <p>© <span id="anoAtual"></span> Cabelo Mara!</p>
+    </footer>
+
+</body>
+</html>
